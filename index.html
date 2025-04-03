@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Location de Licornes Magiques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff6ec7;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .licornes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .licorne-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .licorne-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 2rem auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #ff6ec7;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff49a3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🦄 Louez votre licorne magique !</h1>
+    <p>Des créatures fabuleuses pour tous vos événements enchantés ✨</p>
+  </header>
+
+  <section>
+    <h2>Nos licornes disponibles</h2>
+    <div class="licornes">
+      <div class="licorne-card">
+        <img src="https://via.placeholder.com/250x150.png?text=Licorne+Arc-en-ciel" alt="Licorne Arc-en-ciel">
+        <h3>Licorne Arc-en-ciel</h3>
+        <p>Parfaite pour les anniversaires colorés 🌈</p>
+      </div>
+      <div class="licorne-card">
+        <img src="https://via.placeholder.com/250x150.png?text=Licorne+Nocturne" alt="Licorne Nocturne">
+        <h3>Licorne Nocturne</h3>
+        <p>Idéale pour les soirées mystiques 🌙</p>
+      </div>
+      <div class="licorne-card">
+        <img src="https://via.placeholder.com/250x150.png?text=Licorne+Des+Neiges" alt="Licorne des Neiges">
+        <h3>Licorne des Neiges</h3>
+        <p>Un vrai conte hivernal ❄️</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Réservez votre licorne</h2>
+    <form>
+      <label for="nom">Nom complet :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="licorne">Choisissez votre licorne :</label>
+      <select id="licorne" name="licorne" required>
+        <option value="arc">Licorne Arc-en-ciel</option>
+        <option value="nocturne">Licorne Nocturne</option>
+        <option value="neiges">Licorne des Neiges</option>
+      </select>
+
+      <label for="message">Détails de votre événement :</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Envoyer la demande 📨</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Licornes Magiques. Tous droits réservés. 🦄</p>
+  </footer>
+
+</body>
+</html>
