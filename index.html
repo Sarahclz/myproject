@@ -2,181 +2,174 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Location de Licornes Magiques</title>
+  <title>Licorne Rent – Location de Licornes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --rose-clair: #fff0f5;
+      --violet-foncé: #4b0082;
+      --rose-foncé: #ff69b4;
+      --rose-hover: #d63f90;
+      --blanc: #ffffff;
+      --gris-clair: #f9f9f9;
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to right, #fceabb, #f8b500);
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--rose-clair);
+      color: var(--violet-foncé);
       margin: 0;
       padding: 0;
     }
 
+    a {
+      text-decoration: none;
+      color: var(--violet-foncé);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--violet-foncé);
+    }
+
     header {
-      background-color: #ff6ec7;
+      background-color: var(--rose-foncé);
       color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
     }
 
     nav {
-      background-color: #fff;
+      background-color: var(--blanc);
       display: flex;
       justify-content: center;
+      padding: 1rem 0;
       gap: 2rem;
-      padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-bottom: 2px solid var(--rose-foncé);
     }
 
     nav a {
-      text-decoration: none;
-      color: #ff6ec7;
       font-weight: bold;
+      color: var(--violet-foncé);
     }
 
     nav a:hover {
-      color: #d90085;
+      color: var(--rose-hover);
     }
 
     section {
+      max-width: 1000px;
+      margin: auto;
       padding: 2rem;
+      background-color: var(--blanc);
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .licornes {
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
     }
 
     .licorne-card {
-      background: white;
-      border-radius: 12px;
-      padding: 1rem;
-      margin: 1rem;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: var(--gris-clair);
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      width: 280px;
       text-align: center;
+      padding: 1rem;
     }
 
     .licorne-card img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    form {
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 500px;
-      margin: 2rem auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 100%;
+      border-radius: 6px;
     }
 
     footer {
-      background-color: #222;
-      color: white;
       text-align: center;
-      padding: 1rem;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 0.5rem 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background-color: #ff6ec7;
+      padding: 1.5rem;
+      background-color: var(--violet-foncé);
       color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      margin-top: 3rem;
     }
 
-    button:hover {
-      background-color: #ff49a3;
+    /* Responsive Calendly */
+    .calendly-inline-widget {
+      min-width: 320px;
+      height: 700px;
     }
   </style>
+
+  <!-- Script Calendly -->
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <h1>🦄 Louez votre licorne magique !</h1>
-    <p>Des créatures fabuleuses pour tous vos événements enchantés ✨</p>
+    <h1>Licorne Rent 🦄</h1>
+    <p>Location de licornes pour événements magiques et inoubliables</p>
   </header>
 
+  <!-- NAVIGATION -->
   <nav>
     <a href="#about">Qui sommes-nous ?</a>
     <a href="#services">Nos services</a>
     <a href="#contact">Nous contacter</a>
   </nav>
 
+  <!-- QUI SOMMES-NOUS -->
   <section id="about">
     <h2>Qui sommes-nous ?</h2>
-    <p>Licorne Rent est une société spécialisée dans la location de licornes magiques pour tous vos événements féeriques. 🌟  
-    Notre mission ? Apporter de la magie, des sourires et des souvenirs inoubliables à travers des licornes soigneusement entraînées, douces et photogéniques !  
-    Depuis 2020, nous rendons les anniversaires, mariages et fêtes d’entreprise... tout simplement *magiques*. 🦄</p>
+    <p>Licorne Rent est une entreprise spécialisée dans la location de licornes pour événements privés et professionnels. Depuis 2020, nous faisons rêver petits et grands avec nos licornes bienveillantes, formées pour illuminer vos plus beaux moments.</p>
   </section>
 
+  <!-- NOS SERVICES -->
   <section id="services">
     <h2>Nos services</h2>
-    <p>✨ **Anniversaires** :  
-    Offrez à votre enfant ou à vos proches une expérience unique avec une licorne en chair, en crin et en corne ! Animation, balade, séance photo… un anniversaire inoubliable ! 🎂</p>
-
-    <p>💍 **Mariages** :  
-    Faites une entrée spectaculaire à dos de licorne ou ajoutez une touche féérique à votre cérémonie. Nos licornes sont douces, élégantes, et prêtes pour les plus belles photos de votre vie ! 📸</p>
+    <p><strong>🎉 Anniversaires :</strong> Nos licornes se déplacent à domicile pour émerveiller les enfants et créer des souvenirs magiques avec balades, câlins et séances photo.</p>
+    <p><strong>💍 Mariages :</strong> Faites une entrée de conte de fées ou créez un moment féérique pendant votre cérémonie grâce à nos licornes élégantes et photogéniques.</p>
   </section>
 
+  <!-- LICORNES DISPONIBLES -->
   <section>
     <h2>Nos licornes disponibles</h2>
     <div class="licornes">
       <div class="licorne-card">
         <img src="https://via.placeholder.com/250x150.png?text=Licorne+Arc-en-ciel" alt="Licorne Arc-en-ciel">
         <h3>Licorne Arc-en-ciel</h3>
-        <p>Parfaite pour les anniversaires colorés 🌈</p>
+        <p>Idéale pour les fêtes colorées et les enfants</p>
       </div>
       <div class="licorne-card">
         <img src="https://via.placeholder.com/250x150.png?text=Licorne+Nocturne" alt="Licorne Nocturne">
         <h3>Licorne Nocturne</h3>
-        <p>Idéale pour les soirées mystiques 🌙</p>
+        <p>Parfaite pour les événements nocturnes ou mystiques</p>
       </div>
       <div class="licorne-card">
         <img src="https://via.placeholder.com/250x150.png?text=Licorne+Des+Neiges" alt="Licorne des Neiges">
         <h3>Licorne des Neiges</h3>
-        <p>Un vrai conte hivernal ❄️</p>
+        <p>Un choix élégant pour vos mariages hivernaux</p>
       </div>
     </div>
   </section>
 
+  <!-- NOUS CONTACTER -->
   <section id="contact">
     <h2>Nous contacter</h2>
-    <form>
-      <label for="nom">Nom complet :</label>
-      <input type="text" id="nom" name="nom" required>
-
-      <label for="email">Adresse e-mail :</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="licorne">Choisissez votre licorne :</label>
-      <select id="licorne" name="licorne" required>
-        <option value="arc">Licorne Arc-en-ciel</option>
-        <option value="nocturne">Licorne Nocturne</option>
-        <option value="neiges">Licorne des Neiges</option>
-      </select>
-
-      <label for="message">Détails de votre événement :</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-
-      <button type="submit">Envoyer la demande 📨</button>
-    </form>
+    <p>Planifiez un appel magique avec notre équipe directement via le calendrier ci-dessous :</p>
+    
+    <!-- Calendly Inline Widget -->
+    <div class="calendly-inline-widget" 
+         data-url="https://calendly.com/ton_nom_utilisateur/30min" 
+         style="min-width:320px;height:700px;"></div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Licornes Magiques. Tous droits réservés. 🦄</p>
+    <p>© 2025 Licorne Rent – Tous droits réservés 🦄</p>
   </footer>
 
 </body>
