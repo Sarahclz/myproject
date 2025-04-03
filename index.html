@@ -20,6 +20,25 @@
       padding: 2rem 1rem;
     }
 
+    nav {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff6ec7;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #d90085;
+    }
+
     section {
       padding: 2rem;
     }
@@ -90,6 +109,28 @@
     <p>Des créatures fabuleuses pour tous vos événements enchantés ✨</p>
   </header>
 
+  <nav>
+    <a href="#about">Qui sommes-nous ?</a>
+    <a href="#services">Nos services</a>
+    <a href="#contact">Nous contacter</a>
+  </nav>
+
+  <section id="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Licorne Rent est une société spécialisée dans la location de licornes magiques pour tous vos événements féeriques. 🌟  
+    Notre mission ? Apporter de la magie, des sourires et des souvenirs inoubliables à travers des licornes soigneusement entraînées, douces et photogéniques !  
+    Depuis 2020, nous rendons les anniversaires, mariages et fêtes d’entreprise... tout simplement *magiques*. 🦄</p>
+  </section>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <p>✨ **Anniversaires** :  
+    Offrez à votre enfant ou à vos proches une expérience unique avec une licorne en chair, en crin et en corne ! Animation, balade, séance photo… un anniversaire inoubliable ! 🎂</p>
+
+    <p>💍 **Mariages** :  
+    Faites une entrée spectaculaire à dos de licorne ou ajoutez une touche féérique à votre cérémonie. Nos licornes sont douces, élégantes, et prêtes pour les plus belles photos de votre vie ! 📸</p>
+  </section>
+
   <section>
     <h2>Nos licornes disponibles</h2>
     <div class="licornes">
@@ -111,8 +152,8 @@
     </div>
   </section>
 
-  <section>
-    <h2>Réservez votre licorne</h2>
+  <section id="contact">
+    <h2>Nous contacter</h2>
     <form>
       <label for="nom">Nom complet :</label>
       <input type="text" id="nom" name="nom" required>
